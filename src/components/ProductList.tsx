@@ -282,9 +282,9 @@ const ProductList: React.FC = () => {
         {/* 右侧商品内容区域 */}
         <Content className="product-content">
           {/* 显示筛选结果数量 */}
-          <div className="product-count">
+          <header className="product-count">
             找到 {filteredProducts.length} 件商品
-          </div>
+          </header>
           {/* 如果没有符合条件的商品，显示空状态 */}
           {filteredProducts.length === 0 ? (
             <Empty description="没有找到符合条件的商品" />
@@ -292,16 +292,18 @@ const ProductList: React.FC = () => {
             // 否则显示商品网格
             <>
               {/* 商品网格布局 */}
-              <Row gutter={[24, 24]} className="product-grid">
+              <main className="product-grid">
                 {/* 遍历当前页的商品列表，渲染商品卡片 */}
-                {currentProducts.map(product => (
-                  <Col xs={24} sm={12} md={8} lg={8} xl={8} key={product.id}>
-                    <ProductCard product={product} onAddToCart={handleAddToCart} />
-                  </Col>
-                ))}
-              </Row>
+                <Row gutter={[24, 24]}>
+                  {currentProducts.map(product => (
+                    <Col xs={24} sm={12} md={8} lg={8} xl={8} key={product.id}>
+                      <ProductCard product={product} onAddToCart={handleAddToCart} />
+                    </Col>
+                  ))}
+                </Row>
+              </main>
               {/* 分页组件 */}
-              <div className="pagination-container">
+              <nav className="pagination-container">
                 <Pagination
                   // 当前页码
                   current={currentPage}
@@ -320,7 +322,7 @@ const ProductList: React.FC = () => {
                   // 分页器位置居中
                   className="pagination"
                 />
-              </div>
+              </nav>
             </>
           )}
         </Content>

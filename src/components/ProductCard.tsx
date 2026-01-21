@@ -41,7 +41,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onAddToCart }) => {
       // 卡片封面区域
       cover={
         // 商品图片容器
-        <div className="product-image-container">
+        <figure className="product-image-container">
           {/* 如果图片加载失败，显示商品名称 */}
           {imageError ? (
             <div className="product-image-placeholder">
@@ -56,7 +56,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onAddToCart }) => {
               onError={handleImageError}
             />
           )}
-        </div>
+        </figure>
       }
       // 卡片底部操作按钮区域
       actions={[
@@ -73,22 +73,26 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onAddToCart }) => {
       ]}
     >
       {/* 商品信息区域 */}
-      <div className="product-info">
+      <article className="product-info">
         {/* 商品名称，最多显示 2 行 */}
-        <Title level={5} className="product-name" ellipsis={{ rows: 2 }}>
-          {product.name}
-        </Title>
+        <h2 className="product-name">
+          <Title level={5} ellipsis={{ rows: 2 }}>
+            {product.name}
+          </Title>
+        </h2>
         {/* 商品描述，最多显示 2 行 */}
-        <Paragraph className="product-description" ellipsis={{ rows: 2 }}>
-          {product.description}
-        </Paragraph>
+        <p className="product-description">
+          <Paragraph ellipsis={{ rows: 2 }}>
+            {product.description}
+          </Paragraph>
+        </p>
         {/* 商品元数据区域，包含分类和销量 */}
-        <div className="product-meta">
+        <footer className="product-meta">
           {/* 商品分类标签，蓝色 */}
           <Tag color="blue">{product.category}</Tag>
           {/* 商品销量，灰色文本 */}
           <Text type="secondary">销量: {product.sales}</Text>
-        </div>
+        </footer>
         {/* 商品价格区域 */}
         <div className="product-price">
           {/* 商品价格，红色加粗文本 */}
@@ -96,7 +100,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onAddToCart }) => {
             ¥{product.price.toLocaleString()}
           </Text>
         </div>
-      </div>
+      </article>
     </Card>
   );
 };

@@ -165,14 +165,14 @@ const Login: React.FC = () => {
           </Form>
 
           {/* 提示信息 */}
-          <div className="login-tips">
+          <footer className="login-tips">
             <p>测试账号：admin</p>
             <p>测试密码：123456</p>
-          </div>
+          </footer>
         </Card>
       </Content>
     </Layout>
-  );
+);
 };
 
 // 导出登录页面组件
