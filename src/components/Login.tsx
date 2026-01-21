@@ -38,7 +38,7 @@ const Login: React.FC = () => {
     // 必填校验
     { required: true, message: '请输入用户名' },
     // 最小长度校验
-    { min: 3, message: '用户名至少 3 个字符' },
+    { min: 5, message: '用户名至少 5 个字符' },
     // 最大长度校验
     { max: 20, message: '用户名最多 20 个字符' },
     // 正则校验：只允许字母、数字和下划线
