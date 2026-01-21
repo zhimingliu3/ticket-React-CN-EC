@@ -1,0 +1,65 @@
+/* 购物车抽屉主体样式 */
+.cart-drawer .ant-drawer-body {
+  padding: 16px;
+}
+
+/* 购物车商品项容器样式 */
+.cart-item {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  background-color: #fafafa;
+  transition: all 0.3s ease;
+}
+
+/* 购物车商品项悬停效果 */
+.cart-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 购物车商品图片样式 */
+.cart-item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* 购物车商品信息容器样式 */
+.cart-item-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* 购物车商品价格样式 */
+.cart-item-price {
+  margin-top: 4px;
+}
+
+/* 购物车商品数量控制样式 */
+.cart-item-quantity {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+/* 购物车总计区域样式 */
+.cart-total {
+  margin-top: 24px;
+  padding: 16px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+/* 购物车总计行样式 */
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}

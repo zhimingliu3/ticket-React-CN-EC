@@ -1,0 +1,58 @@
+/* 筛选面板容器样式 */
+.filter-panel {
+  position: sticky;
+  top: 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 筛选面板头部样式 */
+.filter-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 筛选面板头部文字样式 */
+.filter-header .ant-typography {
+  margin: 0;
+}
+
+/* 筛选区域容器样式 */
+.filter-section {
+  width: 100%;
+}
+
+/* 筛选区域标题样式 */
+.filter-section .ant-typography {
+  margin-bottom: 12px;
+}
+
+/* 价格滑块样式 */
+.price-slider {
+  margin-bottom: 16px;
+}
+
+/* 价格显示文本样式 */
+.price-display {
+  text-align: center;
+  font-weight: 500;
+  color: #1890ff;
+  margin-top: 8px;
+}
+
+/* 分类选择器样式 */
+.category-select {
+  width: 100%;
+}
+
+/* 排序单选按钮组样式 */
+.sort-radio-group {
+  width: 100%;
+}
+
+/* 排序单选按钮样式 */
+.sort-radio-group .ant-radio-wrapper {
+  display: block;
+  margin-bottom: 8px;
+}

@@ -1,0 +1,242 @@
+/* 商品列表布局容器样式 */
+.product-list-layout {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* 页面头部样式 */
+.layout-header {
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 0 24px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* 头部内容容器样式 */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+/* 头部右侧操作区域样式 */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* 用户信息按钮样式 */
+.user-info-button {
+  border-radius: 20px;
+  padding: 0 20px;
+  height: 40px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+/* 用户信息按钮悬停样式 */
+.user-info-button:hover {
+  color: #1890ff;
+  border-color: #1890ff;
+}
+
+/* 头部标题样式 */
+.header-title {
+  margin: 0;
+  color: #1890ff;
+}
+
+/* 购物车图标按钮样式 */
+.cart-icon-button {
+  border-radius: 20px;
+  padding: 0 24px;
+  height: 40px;
+  font-weight: 500;
+}
+
+/* 购物车图标按钮默认类型样式（数量为0时） */
+.cart-icon-button.ant-btn-default {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.65);
+  border-color: #d9d9d9;
+}
+
+/* 购物车图标按钮默认类型悬停样式 */
+.cart-icon-button.ant-btn-default:hover {
+  color: #1890ff;
+  border-color: #1890ff;
+}
+
+/* 筛选侧边栏样式 */
+.filter-sider {
+  background-color: #fff;
+  padding: 24px;
+  margin: 24px 0 24px 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: calc(100vh - 88px);
+  overflow-y: auto;
+}
+
+/* 商品内容区域样式 */
+.product-content {
+  padding: 24px;
+  margin: 24px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  min-height: calc(100vh - 88px);
+}
+
+/* 商品数量显示样式 */
+.product-count {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* 商品网格布局样式 */
+.product-grid {
+  margin-top: 16px;
+}
+
+/* 商品网格列样式 */
+.product-grid .ant-col {
+  margin-bottom: 24px;
+}
+
+/* 分页容器样式 */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* 分页组件样式 */
+.pagination {
+  display: flex;
+  align-items: center;
+}
+
+/* 分页组件项样式 */
+.pagination .ant-pagination-item {
+  border-radius: 4px;
+}
+
+/* 分页组件激活项样式 */
+.pagination .ant-pagination-item-active {
+  background-color: #1890ff;
+  border-color: #1890ff;
+}
+
+/* 分页组件激活项链接样式 */
+.pagination .ant-pagination-item-active a {
+  color: #fff;
+}
+
+/* 分页组件跳转输入框样式 */
+.pagination .ant-pagination-options-quick-jumper input {
+  border-radius: 4px;
+}
+
+/* 响应式布局：移动端样式 */
+@media (max-width: 768px) {
+  /* 隐藏筛选侧边栏 */
+  .filter-sider {
+    display: none;
+  }
+
+  /* 调整商品内容区域边距 */
+  .product-content {
+    margin: 16px;
+  }
+
+  /* 调整头部标题字体大小 */
+  .header-title {
+    font-size: 18px;
+  }
+
+  /* 调整头部右侧操作区域间距 */
+  .header-actions {
+    gap: 8px;
+  }
+
+  /* 调整用户信息按钮大小 */
+  .user-info-button {
+    padding: 0 12px;
+    height: 36px;
+    font-size: 14px;
+  }
+
+  /* 调整购物车按钮大小 */
+  .cart-icon-button {
+    padding: 0 16px;
+    height: 36px;
+    font-size: 14px;
+  }
+
+  /* 调整分页容器边距 */
+  .pagination-container {
+    margin-top: 24px;
+    padding-top: 16px;
+  }
+
+  /* 调整分页组件大小 */
+  .pagination {
+    font-size: 12px;
+  }
+}
+
+/* 确认弹窗内容容器样式 */
+.confirm-modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+/* 确认弹窗商品图片样式 */
+.confirm-modal-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 确认弹窗商品名称样式 */
+.confirm-modal-name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+/* 确认弹窗商品价格样式 */
+.confirm-modal-price {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ff4d4f;
+  text-align: center;
+}
+
+/* 确认弹窗底部按钮容器样式 */
+.confirm-modal-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}

@@ -1,0 +1,184 @@
+/* 登录页面布局样式 */
+.login-layout {
+  /* 最小高度占满整个视口 */
+  min-height: 100vh;
+  /* 背景渐变色，从左上到右下，使用 Ant Design 主题色 */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  /* 居中对齐内容 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* 内边距 */
+  padding: 20px;
+}
+
+/* 登录内容区域样式 */
+.login-content {
+  /* 宽度占满 */
+  width: 100%;
+  /* 最大宽度限制 */
+  max-width: 400px;
+}
+
+/* 登录卡片样式 */
+.login-card {
+  /* 卡片阴影效果 */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  /* 圆角边框 */
+  border-radius: 8px;
+  /* 卡片标题样式 */
+}
+
+.login-card .ant-card-head {
+  /* 标题背景色 */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  /* 标题文字颜色 */
+  color: white;
+  /* 标题内边距 */
+  padding: 16px 24px;
+  /* 标题边框 */
+  border-bottom: none;
+}
+
+.login-card .ant-card-head-title {
+  /* 标题文字颜色 */
+  color: white;
+  /* 标题字体大小 */
+  font-size: 20px;
+  /* 标题字体粗细 */
+  font-weight: 600;
+}
+
+/* 登录卡片主体样式 */
+.login-card .ant-card-body {
+  /* 主体内边距 */
+  padding: 32px 24px;
+}
+
+/* 表单项样式 */
+.login-card .ant-form-item {
+  /* 表单项下边距 */
+  margin-bottom: 24px;
+}
+
+/* 表单标签样式 */
+.login-card .ant-form-item-label > label {
+  /* 标签字体大小 */
+  font-size: 14px;
+  /* 标签字体粗细 */
+  font-weight: 500;
+  /* 标签颜色 */
+  color: rgba(0, 0, 0, 0.85);
+}
+
+/* 输入框样式 */
+.login-card .ant-input-affix-wrapper {
+  /* 输入框高度 */
+  height: 44px;
+  /* 输入框内边距 */
+  padding: 8px 12px;
+  /* 输入框边框圆角 */
+  border-radius: 4px;
+  /* 输入框字体大小 */
+  font-size: 14px;
+}
+
+/* 输入框聚焦样式 */
+.login-card .ant-input-affix-wrapper:focus,
+.login-card .ant-input-affix-wrapper-focused {
+  /* 聚焦时边框颜色 */
+  border-color: #667eea;
+  /* 聚焦时阴影效果 */
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+}
+
+/* 输入框前缀图标样式 */
+.login-card .ant-input-prefix {
+  /* 图标颜色 */
+  color: rgba(0, 0, 0, 0.45);
+  /* 图标右边距 */
+  margin-right: 8px;
+}
+
+/* 登录按钮样式 */
+.login-card .ant-btn-primary {
+  /* 按钮高度 */
+  height: 44px;
+  /* 按钮背景渐变色 */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  /* 按钮边框 */
+  border: none;
+  /* 按钮圆角 */
+  border-radius: 4px;
+  /* 按钮字体大小 */
+  font-size: 16px;
+  /* 按钮字体粗细 */
+  font-weight: 500;
+  /* 按钮过渡效果 */
+  transition: all 0.3s ease;
+}
+
+/* 登录按钮悬停样式 */
+.login-card .ant-btn-primary:hover {
+  /* 悬停时背景渐变色 */
+  background: linear-gradient(135deg, #5568d3 0%, #653a8a 100%);
+  /* 悬停时阴影效果 */
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+/* 登录按钮点击样式 */
+.login-card .ant-btn-primary:active {
+  /* 点击时背景渐变色 */
+  background: linear-gradient(135deg, #4456c2 0%, #542e7a 100%);
+}
+
+/* 提示信息样式 */
+.login-tips {
+  /* 提示信息上边距 */
+  margin-top: 16px;
+  /* 提示信息内边距 */
+  padding: 12px;
+  /* 提示信息背景色 */
+  background-color: #f0f2f5;
+  /* 提示信息圆角 */
+  border-radius: 4px;
+  /* 提示信息文字颜色 */
+  color: rgba(0, 0, 0, 0.65);
+  /* 提示信息字体大小 */
+  font-size: 13px;
+  /* 提示信息行高 */
+  line-height: 1.6;
+}
+
+/* 提示信息段落样式 */
+.login-tips p {
+  /* 段落下边距 */
+  margin-bottom: 4px;
+}
+
+/* 提示信息最后一段样式 */
+.login-tips p:last-child {
+  /* 最后一段下边距为 0 */
+  margin-bottom: 0;
+}
+
+/* 响应式设计：小屏幕设备 */
+@media (max-width: 576px) {
+  /* 登录内容区域样式 */
+  .login-content {
+    /* 最大宽度为 100% */
+    max-width: 100%;
+  }
+
+  /* 登录卡片样式 */
+  .login-card {
+    /* 卡片边框圆角为 0 */
+    border-radius: 0;
+  }
+
+  /* 登录卡片主体样式 */
+  .login-card .ant-card-body {
+    /* 主体内边距减小 */
+    padding: 24px 16px;
+  }
+}
